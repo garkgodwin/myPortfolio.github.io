@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+header{
+    width: auto;
+    height: 60px;
+    background-color: rgb(5, 7, 107);
+    transition: 0.5s ease;
+
+}
+header:hover{
+    background-color: white;
+}
+header:hover h1{
+    color: black;
+}
+header img{
+    padding-top: 5px;
+    float: left;
+}
+
+header h1{
+    color:white;
+    font-style: italic;
+    font-size: 30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding-top: 15px;
+}
+header h1:hover{
+    font-size: 50px;
+    padding: 0px;
+}
+
+main{
+    height: 100%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "div div section"
+        "div section div"
+        "section div div"
+    ;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+div{
+    height: 300px;
+    transition: 0.5s ease;
+}
+
+section{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    height: 300px;
+    background-color: rgb(5, 7, 107);
+    transition: 1s ease;
+    color: white;
+}
+
+div.div-extra:hover{
+    border-radius: 50px;
+    background-color: rgb(5, 7, 107);
+}
+#div-first h1{
+    transition: 0.5s ease;
+    color: white;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+#div-first:hover h1{
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 50px;
+}
+#div-second{
+    border-radius: 20px;
+    margin-top: 20px;
+    background-image: url('../Images/me.jpg');
+    opacity: 0;
+    background-size: cover;
+    background-clip: padding-box;
+    transition: 1s ease;
+}
+#div-second:hover{
+    opacity: 1;
+    border-radius: 0;
+}
+section:hover{
+    background-color: white;
+    border-radius: 0;
+    color: rgb(5, 7, 107);
+}
+section h1{
+    transition: 0.5s ease;
+}
+section h2{
+    transition: 0.5s ease;
+    margin-top: 150px;
+    color: rgb(5, 7, 107);
+}
+
+section:hover h1{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+section:hover h2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#div-third{
+    border-radius: 20px;
+    margin-top: 20px;
+    background-image: url('../Images/babe.jpg');
+    opacity: 0;
+    background-size: cover;
+    background-clip: padding-box;
+    transition: 1s ease;
+}
+#div-third:hover{
+    opacity: 1;
+}
+
+section#baby.baby:hover{
+    height: 300px;
+    min-height: 300px;
+}
+.baby:hover h1{
+    color: white;
+}
+.baby h2{
+    font-size: 20px;
+    transition: 1s ease;
+    color: rgb(5, 7, 107);
+    padding-left: 100px;
+}
+
+.baby:hover h2{
+    font-size: 30px;
+    padding-left: 0;
+}
+
+.contact-info{
+    
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas: 
+        "div"
+        "div"
+        "div"
+        "div"
+    ;
+
+}
+
+.contact-info div.number{
+    border-top: 5px dashed white;
+    padding-top: 20px;
+}
+.contact-info:hover div.number{
+    border-top: 5px dashed rgb(5, 7, 107);
+}
+.contact-info div.address{
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+.contact-info div.facebook img, .contact-info div.instagram img,
+.contact-info div.number img, .contact-info div.address img{
+    float: left;
+    transition: 1s ease;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact-info div.address p{
+    padding-left: 70px;
+    padding-right: 40px;
+    cursor: pointer;
+    
+}
+
+div.facebook, div.instagram, div.number{
+    text-align: center;
+    height: 50px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.contact-info:hover div.facebook img{
+    border-radius: 10px;
+    background-image: url('../Images/fbBlue.png');
+    background-color: rgb(5, 7, 107);
+}
+.contact-info:hover div.instagram img{
+    border-radius: 10px;
+    background-image: url('../Images/instaBlue.png.png');
+    background-color: rgb(5, 7, 107);
+}
+.contact-info:hover div.number img{
+    border-radius: 10px;
+    background-image: url('../Images/contactBlue.png');
+    background-color: rgb(5, 7, 107);
+}
+.contact-info:hover div.address img{
+    border-radius: 10px;
+    background-image: url('../Images/addressBlue.png');
+    background-color: rgb(5, 7, 107);
+}
+
+
+
+footer{
+    margin-top: 200px;
+    align-items: center;
+    padding-top: 200px;
+    color: white;
+    margin-top: 10px;
+    height: 200px;
+    background-color: rgb(5, 7, 107);
+    border: 10px dashed white;
+    transition: 1s ease;
+}
+
+footer:hover{
+    border: 10px dashed rgb(5, 7, 107);
+    background-color: white;
+}
+
+footer:hover h1.godwin{
+    margin-top: 50px;
+}
+footer:hover h1.gark{
+    margin-top: -150px;
+    padding-left: 50px;
+}
+footer:hover h1.duque{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+footer h1{
+    margin-top: -80px;
+    transition: 1s ease;
+    color: rgb(5, 7, 107);
+    text-align: center;
+}
+footer img{
+    margin-top: 150px;
+    margin-left: 500px;
+    float: left;
+    transition: 0.2s ease;
+}
+
+footer h3{
+    transition: 0.2s ease;
+    position: relative;
+    margin-top: 150px;
+    padding-top: 3px;
+}
+
+footer:hover h3, footer:hover img{
+    opacity: 0;
+}
